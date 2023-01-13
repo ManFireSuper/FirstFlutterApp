@@ -1,6 +1,38 @@
 import 'package:flutter/material.dart';
 
+// Day2_3
+void main() {
+  runApp(MaterialApp(
+      home: Scaffold(
+          body: Center(
+              child: Container(
+                  child: Center(
+                      child: Container(
+                          child: Center(
+                              child: ElevatedButton(
+                                  onPressed: () {
+                                    print("Button is working");
+                                  },
+                                  child: Text("Press ME!"))),
+                          margin: EdgeInsets.all(5),
+                          color: Colors.blueAccent,
+                          width: 150,
+                          height: 150)),
+                  width: 200,
+                  height: 200,
+                  color: Colors.greenAccent)),
+          appBar: AppBar(title: Text("My App Bar")),
+          floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                print("you are printing +");
+              },
+              child: Text("+")))));
+}
+// Notes :
+
+
 // Day2_2
+/*
 void main() {
   runApp(MaterialApp(
       home: Scaffold(
@@ -17,6 +49,7 @@ void main() {
               },
               child: Text("+")))));
 }
+*/
 // Notes :
 
 // Day2
